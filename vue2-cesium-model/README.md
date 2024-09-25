@@ -1,6 +1,6 @@
 # vue2-cesium-model
 
-## 模型文件下载
+## 模型文件下载---香港3DTiles模型文件
 
 通过百度网盘分享的文件：hk-效果图.png，hk.zip等2个文件
 链接：https://pan.baidu.com/s/1UcEjbHjm3iKCZPCGIrG5GA 
@@ -8,6 +8,17 @@
 
 
 <img src="/public/xiaoguo.png" width="500px" height="350" />
+
+
+### glb模型下载---飞机和轮船
+
+通过百度网盘分享的文件：Airplane.glb，Ocean-Freighter.glb等2个文件
+链接：https://pan.baidu.com/s/1533kefbBmjJnn_jpSFRhUQ 
+提取码：oz7s
+
+<img src="/public/plane.png" width="200px" height="200" />
+<img src="/public/ship.png" width="200px" height="200" />
+
 
 
 ### 香港模型下载网站

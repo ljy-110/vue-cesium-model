@@ -9,6 +9,13 @@
 
 <img src="/public/xiaoguo.png" width="500px" height="350" />
 
+
+### 香港模型下载网站
+https://www.pland.gov.hk/pland_en/info_serv/3D_models/download.htm
+
+### 香港下载模型文件的说明文档
+https://www.pland.gov.hk/pland_en/info_serv/3D_models/Remarks_for_the_3D_Photo-realistic_Model.pdf
+
 ## Project setup
 ```
 npm install

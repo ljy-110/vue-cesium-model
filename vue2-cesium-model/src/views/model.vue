@@ -23,7 +23,7 @@ export default {
   methods: {
     async initModel() { //三维底图
       tileset = null
-      Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1OTM2MDk2NS05M2M4LTQ0YmQtYWI2MS1iYWYyNmZmMzg3N2EiLCJpZCI6MjQxMDEzLCJpYXQiOjE3MjYxMjY1MTB9.V3Bh9fuOmKYEuA0bsJwG3xH06tR7QS12PaH5C8Um4A8";
+      Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9";
       viewer = new Cesium.Viewer("Model", {
         homeButton: false,
         sceneModePicker: false,
@@ -94,6 +94,40 @@ export default {
       // // 最大缩放高度（米）
       // viewer.scene.screenSpaceCameraController.maximumZoomDistance = 10000;
       this.getGlb();
+
+        // 地图换成天地图
+      // const tianditu = new Cesium.WebMapTileServiceImageryProvider({
+      //   url: 'http://{s}.tianditu.gov.cn/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=',
+      //   layer: 'img_w',
+      //   style: 'default',
+      //   format: 'tiles',
+      //   tileMatrixSetID: 'w',
+      //   subdomains:['t0','t1','t2','t3','t4','t5','t6','t7'],
+      //   maximumLevel: 18,
+      //   credit: new Cesium.Credit('天地图'),
+      // })  
+
+      // // 将天地图层添加到观众实例的影像图层集合中
+      // viewer.imageryLayers.addImageryProvider(tianditu)
+
+      // 显示地点标注
+      // viewer.imageryLayers.addImageryProvider(
+      //   new Cesium.WebMapTileServiceImageryProvider({
+      //     url:
+      //       "http://{s}.tianditu.gov.cn/cva_c/wmts?service=wmts&request=GetTile&version=1.0.0" +
+      //       "&LAYER=cva&tileMatrixSet=c&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}" +
+      //       "&style=default&format=tiles&tk=你的ak",
+      //     layer: "vec_w",
+      //     style: "default",
+      //     format: "tiles",
+      //     tileMatrixSetID: "w",
+      //     subdomains: ["t0", "t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      //     tilingScheme: new Cesium.GeographicTilingScheme(),
+      //     tileMatrixLabels: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", ],
+      //     maximumLevel: 18,
+      //     show: false,
+      //   })
+      // );
     },
     getGlb() {
       let modelUrl = '/model/Airplane.glb'

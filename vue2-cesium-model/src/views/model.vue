@@ -29,7 +29,7 @@ export default {
         sceneModePicker: false,
         baseLayerPicker: false, // 影像切换
         animation: false, // 是否显示动画控件
-        infoBox: false, // 是否显示点击要素之后显示的信息
+        infoBox: true, // 是否显示点击要素之后显示的信息
         selectionIndicator: false, // 要素选中框
         geocoder: false, // 是否显示地名查找控件
         timeline: false, // 是否显示时间线控件
